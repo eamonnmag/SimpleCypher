@@ -34,8 +34,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.9</version>
                 <configuration>
-                    <!-- If I don't use one new JVM instance per test, I get the error:
-                             "Timeout trying to lock table REFERENCE_SOURCE". TODO: Maybe is the H2 version? -->
                     <forkMode>pertest</forkMode>
                     <printSummary>true</printSummary>
                 </configuration>
